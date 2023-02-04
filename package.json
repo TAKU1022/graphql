@@ -26,7 +26,7 @@
   "devDependencies": {
     "@babel/core": "7.17.9",
     "@babel/preset-react": "^7.16.7",
-    "@graphql-codegen/cli": "2.16.4",
+    "@graphql-codegen/cli": "1.21.3",
     "@graphql-codegen/typescript": "1.21.1",
     "@graphql-codegen/typescript-operations": "2.5.12",
     "@graphql-codegen/typescript-react-apollo": "3.3.7",
