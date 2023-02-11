@@ -12,7 +12,7 @@ const FetchSub: NextPage = () => {
     <Layout title="Hasura fetchPolicy read cache">
       <p className="mb-6 font-bold">Direct read out from cache</p>
 
-      {data.users.map((user) => {
+      {data?.users.map((user) => {
         return (
           <p className="my-1" key={user.id}>
             {user.name}

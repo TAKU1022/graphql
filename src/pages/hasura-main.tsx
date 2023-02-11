@@ -7,7 +7,11 @@ import { Layout } from '../components/Layout';
 
 const FetchMain: NextPage = () => {
   const { data, error, loading } = useQuery<GetUsersQuery>(GET_USERS, {
-    fetchPolicy: 'network-only',
+    // fetchPolicy: 'network-only',
+    // fetchPolicy: 'cache-only',
+    fetchPolicy: 'cache-and-network',
+    // fetchPolicy: 'cache-first',
+    // fetchPolicy: 'no-cache',
   });
 
   if (error) {
@@ -26,7 +30,7 @@ const FetchMain: NextPage = () => {
         <>Loading...</>
       ) : (
         <>
-          {data.users.map((user) => {
+          {data?.users.map((user) => {
             return (
               <p className="my-1" key={user.id}>
                 {user.name}
