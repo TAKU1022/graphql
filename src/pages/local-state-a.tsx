@@ -1,8 +1,8 @@
-import { FC } from 'react';
+import { NextPage } from 'next';
 import { LocalStateA } from '../components/LocalStateA';
 import { Layout } from '../components/Layout';
 
-const LocalStatePageA: FC = () => {
+const LocalStatePageA: NextPage = () => {
   return (
     <Layout title="Local State A">
       <LocalStateA />

@@ -1,9 +1,10 @@
-import { ChangeEvent, FormEvent, useState, FC } from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
+import { NextPage } from 'next';
 import { todoVar } from '../cache';
 import { useReactiveVar } from '@apollo/client';
 import Link from 'next/link';
 
-export const LocalStateA: FC = () => {
+export const LocalStateA: NextPage = () => {
   const todos = useReactiveVar(todoVar);
 
   const [input, setInput] = useState('');

@@ -1,9 +1,9 @@
-import { FC } from 'react';
+import { NextPage } from 'next';
 import { todoVar } from '../cache';
 import { useReactiveVar } from '@apollo/client';
 import Link from 'next/link';
 
-export const LocalStateB: FC = () => {
+export const LocalStateB: NextPage = () => {
   const todos = useReactiveVar(todoVar);
 
   return (
